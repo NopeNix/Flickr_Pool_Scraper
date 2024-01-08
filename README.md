@@ -2,7 +2,7 @@
 Scrape Flickr Pools (Docker Container) - with Filter Options 
 
 ## How To Use
-You Provide a Flickr Pool ID (e.g. ```1629008@N24``` this can be found in the Pool URL e.g. https://www.flickr.com/groups/```1629008@N24```/) via a Docker Environment Varialbe and the Container will download up to 500 Pictures of this Pool and will update the collection every x Minutes (can be set by you) with the latest pictures.
+You Provide a Flickr Pool ID (e.g. ```1629008@N24``` this can be found in the Pool URL e.g. https://www.flickr.com/groups/```1629008@N24```/) via a Docker Environment Varialbe and the Container will download up to 500 Pictures of this Pool and will update the collection every x Minutes (can be set by you) with the latest pictures. Old Pictures will not be deleted.
 
 ## docker-compose Example
 The Docker Compose Example should be self-explanatory.
