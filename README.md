@@ -17,12 +17,12 @@ services:
     volumes:
       - /mount/where/you/want/images/to/be:/data/images/ # The container sotres the downloaded images under /data/images
     environment:
-      - "POOL_ID=1629008@N24" # ID of the Pool to Scrape e.g. 1629008@N24
-      - "FILTER_HORIZONTAL_IMAGES_ONLY=true" # Only Horizontal Images (true/false)
-      - "FILTER_VERTICAL_IMAGES_ONLY=false" # Only Vertical Images (true/false)
-      - "FILTER_MIN_HEIGHT=1080" # Minimum Image Height in Pixel
-      - "FILTER_MIN_WIDTH=1920" # Minimum Image Height in Pixel
-      - "FILTER_MAX_FILESIZE_MB=10" # Maximum Filesize in MB of a single Image
-      - "INTERVAL=60" # Interval in Minutes between Scraper Runs
-      - "FLICKR_API_KEY=CHANGE-ME!" # You need a Flickr API Key, get it at: https://www.flickr.com/services/api/misc.api_keys.html
+      - "FLICKR_API_KEY=CHANGE-ME!"             # You need a Flickr API Key, get it at: https://www.flickr.com/services/api/misc.api_keys.html
+      - "POOL_ID=1629008@N24"                   # ID of the Pool to Scrape e.g. 1629008@N24
+      - "FILTER_HORIZONTAL_IMAGES_ONLY=true"    # Only Horizontal Images (true/false)
+      - "FILTER_VERTICAL_IMAGES_ONLY=false"     # Only Vertical Images (true/false)
+      - "FILTER_MIN_HEIGHT=1080"                # Minimum Image Height in Pixel
+      - "FILTER_MIN_WIDTH=1920"                 # Minimum Image Height in Pixel
+      - "FILTER_MAX_FILESIZE_MB=10"             # Maximum Filesize in MB of a single Image
+      - "INTERVAL=60"                           # Interval in Minutes between Scraper Runs
 ```
