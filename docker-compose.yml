@@ -1,0 +1,19 @@
+version: "3"
+services:
+  flickr_pool_scraper:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - images:/data/images/
+    environment:
+      - "POOL_ID=1629008@N24" # ID of the Pool to Scrape
+      - "FILTER_HORIZONTAL_IMAGES_ONLY=true" # Only Horizontal Images
+      - "FILTER_VERTICAL_IMAGES_ONLY=false" # Only Vertical Images
+      - "FILTER_MIN_HEIGHT=1080" # Minimum Image Height in Pixel
+      - "FILTER_MIN_WIDTH=1920" # Minimum Image Height in Pixel
+      - "FILTER_MAX_FILESIZE_MB=10" # Maximum Filesize of a single Image
+      - "INTERVAL=60" # Interval in Minutes between Scraper Runs
+      - "FLICKR_API_KEY=" # Flickr API Key
+
+volumes:
+  images:
